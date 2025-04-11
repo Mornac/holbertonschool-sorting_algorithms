@@ -5,19 +5,21 @@
 /**
  *bubble_sort - sorts an array of integers in ascending order
  *using the Bubble sort algorithm
- **@array: array of integers
+ *@array: array of integers
  *@size: size of the array
- * Return: array in ascending order
+ *Return: array in ascending order
  */
 void bubble_sort(int *array, size_t size)
 {
-	if (array == NULL || size < 2)
-		return;
-
 	size_t i;
 	size_t j;
 	size_t k;
 	int temp;
+
+	if (array == NULL || size < 2)
+	{
+		return;
+	}
 
 	for (i = 0; i < size - 1; i++)
 	{
