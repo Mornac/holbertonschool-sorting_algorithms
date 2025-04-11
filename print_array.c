@@ -18,6 +18,8 @@ void print_array(const int *array, size_t size)
 			printf(", ");
 		printf("%d", array[i]);
 		++i;
+		if (i < size - 1)
+			printf(", ");
 	}
 	printf("\n");
 }
