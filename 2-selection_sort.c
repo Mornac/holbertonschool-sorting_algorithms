@@ -10,7 +10,6 @@
  *@size: size of the array
  *Return: array in ascending order
  */
-#include <stddef.h>
 void selection_sort(int *array, size_t size)
 {
 	size_t i;
